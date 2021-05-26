@@ -36,51 +36,65 @@ var app = new Vue ({
         ],
 
         footerData:{
-            twitterData: [
+            textdata: [
             {
-                text: "lorem",
+                text: "> The company",
             },
             {
-                text: "lorem",
+                text: "> Institutional",
             },
             {
-                text: "lorem",
+                text: "> Social & Events",
             },
             {
-                text: "lorem",
+                text: "> Innovation",
             },
             {
-                text: "lorem",
+                text: "> Environment",
             },
             {
-                text: "lorem",
+                text: "> Technology",
             },
         ],
 
-        links: [
+        textdata2: [
             {
-                text: "lorem",
-                link: "#"
+                text: "> Industrialized",
             },
             {
-                text: "lorem",
-                link: "#"
+                text: "> Chemicals",
             },
             {
-                text: "lorem",
-                link: "#"
+                text: "> Packaged Liquids",
             },
             {
-                text: "lorem",
-                link: "#"
+                text: "> Construction",
             },
             {
-                text: "lorem",
-                link: "#"
+                text: "> Laminated Wood",
             },
             {
-                text: "lorem",
-                link: "#"
+                text: "> And others",
+            },
+        ],
+        textdata3: [
+            {
+                text: "> Responsability",
+            },
+            {
+                text: "> Terms of Use",
+            },
+            {
+                text: "> About Cookies",
+            },
+            {
+                text: "> Privacy policy",
+            },
+            {
+                text: "> Accessibility",
+            },
+            {
+                text: "> Information",
             },
         ],
             }

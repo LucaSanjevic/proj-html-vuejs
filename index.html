@@ -45,10 +45,21 @@
 <div class="bg1">
     <div class=" width1000">
         <div class=" flex spaceBetween">
+           
+            <span class="bgopacitybluelagoon">
+                <span class="bluelagooncolor inline floatRight verticalAlign marginTop3">
+                    <h3>NEX</h3>
+                </span>
+            </span>
 
+            <span class="white inline marginRight">
+                <h3>GEN</h3>
+            </span>
+
+            <div class="flex alignItems">
             <ul>
                 <li v-for="link in listaLinks">
-                    <a :href="link.url" v-if="link.url">
+                    <a class="white" :href="link.url" v-if="link.url">
                         {{link.text}}
                     </a>
 
@@ -57,14 +68,16 @@
                         </i>
                     </span>
                 </li>
+                
             </ul>  
 
 
 
             <div class="spacing white">
-            <button class="bluechill padding white">GET IN TOUCH</button>
-            </div>
+                <button @click="button()" class="bluechill padding white inline">GET IN TOUCH</button>
+                </div>
 
+        </div>
         </div>
 
 <div class="marginTop2">
@@ -74,27 +87,27 @@
 regions, with small, medium and large vehicles. <br>
 </p>
 <div class="paddingbottom paddingtop">
-<button class="bluechill padding white">GET IN TOUCH</button>
-<button class="bluechillborder padding white opacity">READ MORE</button>
+    <button @click="button()" class="bluechill padding white">GET IN TOUCH</button>
+<button @click="button()" class="bluechillborder padding white opacity">READ MORE</button>
 </div>
 </div>
 </div>
 </div>
 
 <!--SECONDA PARTE-->
-<div class="width1000">
-    <div>
+<div class="width1000 marginTop2 flex">
+    <div class="width4">
 <span class="bluechillColor">WHO WE ARE</span> <br>
- <h1 class="fontWeight"><span class="seanymon"><i class="far fa-gem"></i>Excellence</span> in Transport</h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestubulum velit tortor, interdum sec cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non lacus.
-     praesent fringilla quis massa et placerat. Mauris eu dul eget urna pellentesque gravida vitae quis nibh. Ut at augue tortor. Pellentesque quis suscipit magna.
+ <h1 class="fontWeight marginTop4"><span class="bluelagooncolor bgfountainblue"><i class="far fa-gem"></i>Excellence</span> in Transport</h1>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestubulum velit tortor, interdum sed cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non lacus. <br> <br>
+     praesent fringilla quis massa et placerat. Mauris eu dul eget urna pellentesque gravida vitae <br> quis nibh. Ut at augue tortor. Pellentesque quis suscipit magna. <br> <br>
 
-     <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed quam tortor, ultrices accumsan mauris eget, pulvinar tincidunt erat. Sed nisi, rutrum sit amet elit.</i>
+    <i class="borderLeft"><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed quam tortor, ultrices <br> accumsan mauris eget, pulvinar tincidunt erat. Sed nisi, rutrum sit amet elit. <br></i> <br> <br>
  
  Sed mauris nulla, tempor eu est vel, dapibus hendrerit mauris curabitur dictum pharetra.
     </p>
 
-    <ul>
+    <ul class="flex column">
         <li>Lorem ipsum</li>
         <li>Consectetur adipiscing elit</li>
         <li>Integer molestie lorem at massa</li>
@@ -103,55 +116,84 @@ regions, with small, medium and large vehicles. <br>
     </ul>
 </div>
 <!--SECONDA META SECONDA PARTE-->
-<div>
+<div class="width3">
+
     <h3>Vehicle Types</h3>
+    <div class="flex marginTop4">
+    <img class="img3 bgfountainblue" src="img/truck-1.png" alt="">
     <div>
-    <img src="img/truck-1.png" alt="">
    <h3>Light</h3> <p>Max Weight 1200 Kg</p>
 </div>
-    <div>
-        <img src="img/truck-1.png" alt="">
-        <h3>Medium</h3> <p>Max Weight 6000 Kg</p>
     </div>
-        <div>
-            <img src="img/truck-1.png" alt="">
-            <h3>Heavy</h3> <p>Max Weight 24000 Kg</p>
-        </div>
 
-        <h3>Certifications</h3>
+<hr class="marginTop5">
 
-        <img src="img/certificate.png" alt="" srcset="">
-        <img src="img/certificate.png" alt="" srcset="">
+    <div class="flex marginTop4">
+    <img class="img3 bgfountainblue" src="img/truck-1.png" alt="">
+    <div>
+   <h3>Medium</h3> <p>Max Weight 6000 Kg</p>
+</div>
+    </div>
+
+<hr class="marginTop5">
+
+    <div class="flex marginTop4">
+    <img class="img3 bgfountainblue" src="img/truck-1.png" alt="">
+    <div>
+   <h3>Heavy</h3> <p>Max Weight 24000 Kg</p>
+    </div>
+    </div>
+
+
+        <h3 class="marginTop6">Certifications</h3>
+
+        <img class="img4" src="img/certificate.png" alt="" srcset="">
+        <img class="img4" src="img/certificate.png" alt="" srcset="">
+</div>
 </div>
 
-</div>
 
 <div class="bgBlack">
-    <div class="width1000">
-    <span class="bluechillColor">WHO WE ARE</span> <br>
-    <h1 class="fontWeight white">Main<span class="bgbluelagoon">Services</span></h1>
-<p class="white">With all of this expertise and capability comes an unrivailed commitment to customer service. We will <br>
+    <div class="width1000 marginTop2">
+    <span class="bluechillColor">ROAD TRANSPORT</span> <br>
+    <h1 class="fontWeight white marginTop4">Main<span class="bgbluelagoon1">Services</span></h1>
+
+    <div class="flex">
+    <div>
+<p class="marginTop4">With all of this expertise and capability comes an unrivailed commitment to customer service. We will <br>
 work hard to understand your needs in order to develop a productive, long-term partnership.</p>
-<button class="bgBlack bluechillborder">SEE ALL</button>
-
-<div>
-    <i class="fas fa-truck-loading"></i>
-    <h3 class="white fontWeight">Technology</h3>
-    <p class="white">We are continually focused on developing technology solutions adapted to our client's needs.</p>
 </div>
 
-<div>
-    <i class="fas fa-temperature-low"></i>
-    <h3 class="white fontWeight">Reefer Cargo</h3>
-    <p class="white"> Regular and frequent monitoring from the receipt of the loaded container to final destination.</p>
-
+<div class="alignItems flex">
+<button @click="button()" class="bgBlack bluechillborder marginLeft2 white padding">SEE ALL</button>
+</div>
 </div>
 
-<div>
-    <i class="fas fa-boxes"></i>
-    <h3 class="white fontWeight">Dry Cargo</h3>
-    <p class="white">We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.</p>
+<div class="flex marginTop4 paddingbottom">
 
+<div class="bg-black">
+    <div class="width_80 marginAuto marginTop7">
+    <i class="fas fa-truck-loading bluechillColor font30"></i>
+    <h3 class="white fontWeight marginTop5">Technology</h3>
+    <p class="textCenter marginTop5">We are continually focused on developing technology solutions adapted to our client's needs.</p>
+</div>
+</div>
+
+<div class="bg-black">
+    <div class="width_80 marginAuto marginTop7">
+    <i class="fas fa-temperature-low bluechillColor font30"></i>
+    <h3 class="white fontWeight marginTop5">Reefer Cargo</h3>
+    <p class="textCenter marginTop5"> Regular and frequent monitoring from the receipt of the loaded container to final destination.</p>
+</div>
+</div>
+
+<div class="bg-black">
+    <div class="width_80 marginAuto marginTop7 paddingbottom2">
+    <i class="fas fa-boxes bluechillColor font30"></i>
+    <h3 class="white fontWeight marginTop5">Dry Cargo</h3>
+    <p class="textCenter marginTop5">We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -159,34 +201,45 @@ work hard to understand your needs in order to develop a productive, long-term p
 
 <!--QUARTA PARTE-->
 <div>
-    <span class="bluechillColor textCenter">HOW IT WORKS IN PRACTICE</span> <br>
-    <h1 class="fontWeight textCenter"><span class="bgbermuda bluechillColor">Logistical</span> Procedure</h1>
-    <p>We work with innovative methodologies to ensure that the entire delivery process is done from start to finish as planned.</p>
-<!--fare la linea-->
+    <div class="bluechillColor textCenter">HOW IT WORKS IN PRACTICE</div> <br>
+    <h1 class="fontWeight textCenter"><span class="bgfountainblue bluechillColor">Logistical</span> Procedure</h1>
+    <p class="textCenter">We work with innovative methodologies to ensure that the entire delivery process is done from <br> start to finish as planned.</p>
+<div class="riga inline"></div>
+<div class="bgfountainblue bluechillColor inline cerchio"><div class="textCenter marginTop3"> 01</div></div>
+<div class="inline riga2"></div>
+<div class="bgfountainblue bluechillColor inline cerchio"><div class="textCenter marginTop3"> 02</div></div>
+<div class="inline riga2"></div>
+<div class="bgfountainblue bluechillColor inline cerchio"><div class="textCenter marginTop3"> 03</div></div>
+<div class="inline riga2"></div>
+<div class="bgfountainblue bluechillColor inline cerchio"><div class="textCenter marginTop3"> 04</div></div>
+<div class="inline riga2"></div>
+<div class="bgfountainblue bluechillColor inline cerchio"><div class="textCenter marginTop3"> 05</div></div>
+<div class="inline riga3"></div>
 
-<div class="width1200">
 
-    <div>
+<div class="width1200 flex marginAuto spaceBetween marginTop5">
+
+    <div class="width15 textCenter">
         <h3>Collection of information</h3>
         <p>Lorem ipsum dolor sit amet consectetur</p>
     </div>
     
-    <div>
+    <div class="width15 textCenter">
         <h3>Service Invoice Sending</h3>
         <p>Lorem ipsum dolor sit amet consectetur</p>
     </div>
 
-    <div>
+    <div class="width15 textCenter">
         <h3>Withdrawal of Cargo</h3>
         <p>Lorem ipsum dolor sit amet consectetur</p>
     </div>
 
-    <div>
+    <div class="width15 textCenter">
         <h3>Transport Customer Order</h3>
         <p>Lorem ipsum dolor sit amet consectetur</p>
     </div>
 
-    <div>
+    <div class="width15 textCenter">
         <h3>Successful Delivery</h3>
         <p>Lorem ipsum dolor sit amet consectetur</p>
     </div>
@@ -197,30 +250,111 @@ work hard to understand your needs in order to develop a productive, long-term p
 
 
 <!--QUINTA PARTE-->
+<div class="marginTop2">
+    <div class="bluechillColor textCenter marginTop2">WHAT ARE WE DOING</div> <br>
+    <h1 class="fontWeight textCenter white"><span class="bgbermuda">Results</span> in Numbers</h1>
+
+    <div class="flex width1000 spaceBetween">
+    <div class="textCenter">
+        <span class="bluechillColor fontSize2">128 <br> <span class="white">Certifications</span></span>
+    </div>
+
+    <div class="textCenter">
+        <span class="bluechillColor fontSize2">230 <br> <span class="white">Employees</span></span>
+    </div>
+    
+    <div class="textCenter">
+        <span class="bluechillColor fontSize2">517 <br> <span class="white">Customers</span></span>
+    </div>
+    
+    <div class="textCenter">
+        <span class="bluechillColor fontSize2">94 <br> <span class="white">Countries Served</span></span>
+    </div>
+</div>
+</div>
+
+
+<!--SESTA PARTE-->
+<div class="bgBlack">
+    <div class="width1000">
+    <span class="bluechillColor textCenter">CUSTOMER TESTIMONIALS</span> <br>
+    <h1 class="fontWeight white textCenter">Trusted<span class="bgbluelagoon">Feedback</span></h1>
+<p class="white textCenter">We work intensively in search of ideals that can add up in the lives of our customers. This is what <br> moves us and we are grateful for the recognition.</p>
+<button @click="button()" class="bgBlack bluechillborder">SEE ALL</button>
+
 <div>
-    <span class="bluechillColor textCenter">WHAT ARE WE DOING</span> <br>
-    <h1 class="fontWeight textCenter"><span class="bgbermuda bluechillColor">Results</span> in Numbers</h1>
+    <img src="img/logo-1.png" alt="" srcset="">
+     <p class="white">Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque. Lorem ipsum dolor sit amet, cinsectetur adipiscing elit.</p>
+</div>
+
+<div>
+    <img src="img/logo-2.png" alt="" srcset="">
+    <p class="white">Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque. Lorem ipsum dolor sit amet, cinsectetur adipiscing elit.</p>
+</div>
+
+<div>
+    <img src="img/logo-3.png" alt="" srcset="">
+    <p class="white">Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque. Lorem ipsum dolor sit amet, cinsectetur adipiscing elit.</p>
+</div>
+</div>
 </div>
 
 
 
-<footer>
+<!--SETTIMA PARTE-->
+<div class="width1000">
+
+<div>
+    <span class="bluechillColor">WHO WE ARE</span> <br>
+    <h1 class="fontWeight">Get in<span class="bluelagooncolor bgbluelagoon">Touch</span></h1>
+    <p>We will respond to your message as soon as possible</p>
+    <input type="text" placeholder="Name" class="bgsilversand">
+    <input type="text" placeholder="Name" class="bgsilversand">
+    <input type="text" placeholder="Name" class="bgsilversand">
+    <input type="text" placeholder="Name" class="bgsilversand">
+    <input type="text" placeholder="Name" class="bgsilversand">
+    <button @click="button()" class="white bgbluelagoon1">SEND</button>
+</div>
+
+
+<div>
+    <h3>Example Inc.</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Praesent diam lacus, dapibus sed imperdiet consectetur. <br>
+    </p>
+        <span><span><i class="fas fa-phone-alt"></i></span>+1 (305)1234-5678</span>
+        <span><span><i class="fas fa-envelope"></i></span>hello@example.com</span>
+        <span><span><i class="fas fa-map-marker-alt"></i></span>Main Avenue,987</span>
+        <button @click="button()" class="borderbluelagoon bluelagooncolor">VIEW MAP</button>
+</div>
+
+
+</div>
+
+
+
+<footer class="bg-black">
+    <div class="width1000">
     <div class="flex">
+
         <div class="col">
-            <h3></h3>
+            <h3><span class="bluechillColor bgbluelagoon1">NEX</span>GEN</h3>
 
-            <p></p>
-
-            <a href="">a</a>
-            <a href="">b</a>
-            <a href="">c</a>
+            <p>A functional HTML Template <br> for Corporate & Business. <br>
+            <br>
+            <span><span><i class="fas fa-phone-alt"></i></span>+1 (305)1234-5678</span>
+            <span><span><i class="fas fa-envelope"></i></span>hello@example.com</span>
+            <span><span><i class="fas fa-map-marker-alt"></i></span>Main Avenue,987</span>
+            <button @click="button()" class="borderbluelagoon bluelagooncolor white">GET IN TOUCH</button>
+    
+        </p>
 
         </div>
 
         <div class="col">
-            <h3>twitter list</h3>
+            <h3 class="white">About</h3>
 
-            <ul>
+            <ul class="flex column">
                 <li v-for="tweet in footerData.twitterData">
                 <a :href="tweet.link">
                     {{tweet.text}}
@@ -231,21 +365,41 @@ work hard to understand your needs in order to develop a productive, long-term p
         </div>
 
         <div class="col">
-            <h3>Links</h3>
+            <h3 class="white">Transport</h3>
 
-            <ul>
-                <li v-for="link in footerData.links">
-                <a :href="link.link">
-                    {{link.text}}
+            <ul class="flex column">
+                <li v-for="tweet in footerData.twitterData">
+                <a :href="tweet.link">
+                    {{tweet.text}}
                 </a>
                 </li>
             </ul>
 
         </div>
-       
 
 
+        <div class="col">
+            <h3 class="white">Support</h3>
+
+            <ul class="flex column">
+                <li v-for="tweet in footerData.twitterData">
+                <a :href="tweet.link">
+                    {{tweet.text}}
+                </a>
+                </li>
+            </ul>
+
+        </div>
     </div>
+    </div>
+
+    <div class="bgBlack">
+        <div class="width1000 flex spaceBetween">
+            <div class="white">Enjoy the low price. We are tracking any intention of piracy.</div>
+            <div class="white"><i class="far fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <span class="bluelagooncolor">Codings</span>.</div>
+        </div>
+    </div>
+
 </footer>
 
 

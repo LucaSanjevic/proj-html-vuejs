@@ -4,19 +4,34 @@ var app = new Vue ({
         listaLinks:[
             
             {
-              text: "Shopping Cart",
+              text: "HOME",
               url: "#"
             },
 
             {
-                text:"My Account",
+                text:"ABOUT",
                 url: "#"
             },
 
             {
+                text: "SERVICES",
+                url: "#"
+              },
+
+              {
+                text: "PROCESS",
+                url: "#"
+              },
+
+              {
+                text: "TESTIMONIALS",
+                url: "#"
+              },
+
+            {
                 text:"",
                 url:"#",
-                icon: "fa-user"
+                icon: "fa-user "
             },
         ],
 
@@ -69,5 +84,10 @@ var app = new Vue ({
             },
         ],
             }
-        }
+        },
+        methods: {
+            button: function(event) {
+                alert("Funzione non disponibile in questo momento!")
+                                 }
+                                }
 });

@@ -1,0 +1,187 @@
+$font-family: 'Railway', sans-serif;
+$white: white;
+$woodsmoke: #121117;
+$midgray: #69696d;
+$bluelagoon: #038384;
+$silversand: #bcbdbd;
+$fountainblue: #52bbbb;
+$tussock: #bd9542;
+$caferoyale: #74370e;
+$graynurse: #e6ece8;
+$snark: #191c1e;
+$kabu: #604f42;
+$breakerbay: #609d9f;
+$smallblue: #59838c;
+$bluechill: #16928e;
+$seanymon: #719a9c;
+$quincy: #5d412a;
+$merlin: #403a36;
+$bermuda: #7fd2d5;
+$spacing: 13px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    font-family: $font-family;
+}
+
+.width1000 {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  li {
+      display: inline;
+      margin: 10px;
+  }
+
+  .spaceBetween {
+      justify-content: space-between;
+  }
+
+  .textCenter {
+      text-align: center;
+  }
+
+  .marginAuto {
+      margin: auto;
+  }
+
+      .floatRight {
+          float: right;
+      }
+
+      .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+      }
+
+      .flexEnd {
+          justify-content: flex-end;
+      }
+
+      .inline {
+          display: inline-block;
+      }
+
+
+
+      .bg-black {
+          background-color: $snark;
+      }
+
+      .white {
+          color: $white;
+          font-weight: bold;
+      }
+
+    .spacing {
+        margin: $spacing;
+    }
+
+    .alignItems {
+        align-items: center;
+    }
+
+    .bg1 {
+        background-color: brown;
+    }
+
+    .height80vh {
+        height: 80vh;
+    }
+
+    .bluechill {
+        background-color: $bluechill;
+    }
+
+    .padding {
+        padding: 10px;
+    }
+
+    .marginTop2 {
+        margin-top: 100px;
+    }
+
+    .bluechillColor {
+color: $bluechill;
+font-weight: bold;
+    }
+
+    .cargoTransport {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .midgray {
+        color: $midgray;
+    }
+
+    .bluechillborder {
+        border-color: $bluechill;
+    }
+
+    .paddingbottom {
+        padding-bottom: 150px;
+    }
+
+    .seanymon {
+        background-color: $seanymon;
+    }
+
+.paddingtop {
+    padding-top: 30px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.opacity {
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.col {
+    flex: 1;
+}
+
+.fontWeight {
+    font-weight: 800;
+}
+
+.bgBlack {
+    background-color: $woodsmoke;
+}
+
+.bgbluelagoon {
+    background-color: $seanymon;
+}
+
+.bgbermuda {
+    background-color: $bermuda;
+}
+
+.width1200 {
+    width: 1200px;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main id="app">
+        <!--PRIMO PARAGRAFO-->
+        <nav class="bg-black">
+        <div class="width1000 flex spaceBetween">
+            <div class="flex alignItems"><span class="white marginTop"><i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00-18:00</span></div>
+            <div class="flex">
+                    <div class="spacing white">
+                    <i class="fas fa-phone"></i> +1(305) 1234-5678
+                </div>
+
+                <div class="spacing white">
+                    <i class="fas fa-envelope"></i> hello@example.com
+                </div>
+
+                <div class="spacing white">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+
+                    <div class="spacing white">
+                    <i class="fab fa-twitter"></i>
+                   </div>
+
+                    <div class="spacing white">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+    </div>
+</nav>
+
+<!--PRIMA PARTE-->
+<div class="bg1">
+    <div class=" width1000">
+        <div class=" flex spaceBetween">
+
+            <ul>
+                <li v-for="link in listaLinks">
+                    <a :href="link.url" v-if="link.url">
+                        {{link.text}}
+                    </a>
+
+                    <span v-else-if="link.icon">
+                        <i class="fas " :class="link.icon">
+                        </i>
+                    </span>
+                </li>
+            </ul>  
+
+
+
+            <div class="spacing white">
+            <button class="bluechill padding white">GET IN TOUCH</button>
+            </div>
+
+        </div>
+
+<div class="marginTop2">
+<span class="bluechillColor">LOGISTIC SERVICES</span>
+<h1 class="cargoTransport white">CARGO <br> TRANSPORT</h1>
+<p class="midgray">Frational or exclusive road cargo transportation to all <br>
+regions, with small, medium and large vehicles. <br>
+</p>
+<div class="paddingbottom paddingtop">
+<button class="bluechill padding white">GET IN TOUCH</button>
+<button class="bluechillborder padding white opacity">READ MORE</button>
+</div>
+</div>
+</div>
+</div>
+
+<!--SECONDA PARTE-->
+<div class="width1000">
+    <div>
+<span class="bluechillColor">WHO WE ARE</span> <br>
+ <h1 class="fontWeight"><span class="seanymon"><i class="far fa-gem"></i>Excellence</span> in Transport</h1>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestubulum velit tortor, interdum sec cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non lacus.
+     praesent fringilla quis massa et placerat. Mauris eu dul eget urna pellentesque gravida vitae quis nibh. Ut at augue tortor. Pellentesque quis suscipit magna.
+
+     <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed quam tortor, ultrices accumsan mauris eget, pulvinar tincidunt erat. Sed nisi, rutrum sit amet elit.</i>
+ 
+ Sed mauris nulla, tempor eu est vel, dapibus hendrerit mauris curabitur dictum pharetra.
+    </p>
+
+    <ul>
+        <li>Lorem ipsum</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilis in pretium nisl aliquet</li>
+        <li>Dapibus hendrerit mauris curabitur</li>
+    </ul>
+</div>
+<!--SECONDA META SECONDA PARTE-->
+<div>
+    <h3>Vehicle Types</h3>
+    <div>
+    <img src="img/truck-1.png" alt="">
+   <h3>Light</h3> <p>Max Weight 1200 Kg</p>
+</div>
+    <div>
+        <img src="img/truck-1.png" alt="">
+        <h3>Medium</h3> <p>Max Weight 6000 Kg</p>
+    </div>
+        <div>
+            <img src="img/truck-1.png" alt="">
+            <h3>Heavy</h3> <p>Max Weight 24000 Kg</p>
+        </div>
+
+        <h3>Certifications</h3>
+
+        <img src="img/certificate.png" alt="" srcset="">
+        <img src="img/certificate.png" alt="" srcset="">
+</div>
+
+</div>
+
+<div class="bgBlack">
+    <div class="width1000">
+    <span class="bluechillColor">WHO WE ARE</span> <br>
+    <h1 class="fontWeight white">Main<span class="bgbluelagoon">Services</span></h1>
+<p class="white">With all of this expertise and capability comes an unrivailed commitment to customer service. We will <br>
+work hard to understand your needs in order to develop a productive, long-term partnership.</p>
+<button class="bgBlack bluechillborder">SEE ALL</button>
+
+<div>
+    <i class="fas fa-truck-loading"></i>
+    <h3 class="white fontWeight">Technology</h3>
+    <p class="white">We are continually focused on developing technology solutions adapted to our client's needs.</p>
+</div>
+
+<div>
+    <i class="fas fa-temperature-low"></i>
+    <h3 class="white fontWeight">Reefer Cargo</h3>
+    <p class="white"> Regular and frequent monitoring from the receipt of the loaded container to final destination.</p>
+
+</div>
+
+<div>
+    <i class="fas fa-boxes"></i>
+    <h3 class="white fontWeight">Dry Cargo</h3>
+    <p class="white">We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.</p>
+
+</div>
+</div>
+</div>
+
+
+<!--QUARTA PARTE-->
+<div>
+    <span class="bluechillColor textCenter">HOW IT WORKS IN PRACTICE</span> <br>
+    <h1 class="fontWeight textCenter"><span class="bgbermuda bluechillColor">Logistical</span> Procedure</h1>
+    <p>We work with innovative methodologies to ensure that the entire delivery process is done from start to finish as planned.</p>
+<!--fare la linea-->
+
+<div class="width1200">
+
+    <div>
+        <h3>Collection of information</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+    
+    <div>
+        <h3>Service Invoice Sending</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+
+    <div>
+        <h3>Withdrawal of Cargo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+
+    <div>
+        <h3>Transport Customer Order</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+
+    <div>
+        <h3>Successful Delivery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+
+</div>
+
+</div>
+
+
+<!--QUINTA PARTE-->
+<div>
+    <span class="bluechillColor textCenter">WHAT ARE WE DOING</span> <br>
+    <h1 class="fontWeight textCenter"><span class="bgbermuda bluechillColor">Results</span> in Numbers</h1>
+</div>
+
+
+
+<footer>
+    <div class="flex">
+        <div class="col">
+            <h3></h3>
+
+            <p></p>
+
+            <a href="">a</a>
+            <a href="">b</a>
+            <a href="">c</a>
+
+        </div>
+
+        <div class="col">
+            <h3>twitter list</h3>
+
+            <ul>
+                <li v-for="tweet in footerData.twitterData">
+                <a :href="tweet.link">
+                    {{tweet.text}}
+                </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col">
+            <h3>Links</h3>
+
+            <ul>
+                <li v-for="link in footerData.links">
+                <a :href="link.link">
+                    {{link.text}}
+                </a>
+                </li>
+            </ul>
+
+        </div>
+       
+
+
+    </div>
+</footer>
+
+
+
+    </main>
+</body>
+<script src="myScript.js"></script>
+</html>

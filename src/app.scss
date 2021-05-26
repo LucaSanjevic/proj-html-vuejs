@@ -193,7 +193,7 @@ font-weight: bold;
 }
 
 .bgbluelagoon1 {
-    background-color: $bluelagoon;
+    background-color: #03838450;
     border-radius: 4px;
 }
 
@@ -203,7 +203,7 @@ font-weight: bold;
 
 .bgopacitybluelagoon {
     background-color: #03838450;
-    height: 40px;
+    height: 35px;
     width: 70px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -331,7 +331,7 @@ li {
 }
 
 .width30 {
-    width: 30%;
+    width: 31%;
 }
 
 .paddingbottom3 {
@@ -407,4 +407,37 @@ li {
 
         .bg1 {
             background-image: url();
+        }
+
+        .marginLeft4 {
+            margin-left: 20px;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .virgolette {
+            bottom: 20px;
+            right: 10px;
+            font-size: 20px;
+        }
+
+        .freccia {
+            top: 5px;
+            right: 20px;
+            font-size: 20px;
+            opacity: 0.5;
+        }
+
+        .height40 {
+            height: 40px;
+        }
+
+        .marginTop11 {
+            margin-top: 20px;
         }
